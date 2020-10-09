@@ -8,6 +8,9 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
+gem 'bcrypt',         '3.1.13'
+gem 'bootstrap-sass',   '3.4.1'
+
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -31,6 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry', '~> 0.13.1'
 end
 
 group :development do
